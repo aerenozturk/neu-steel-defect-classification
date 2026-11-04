@@ -1,0 +1,43 @@
+{
+  "dataset": "NEU-DET",
+  "split_policy": "train only for feature extraction; validation reserved for final held-out test",
+  "train_before_dedup": 1440,
+  "train_after_dedup": 1439,
+  "heldout_test_count": 360,
+  "image_size": [
+    64,
+    64
+  ],
+  "hog": {
+    "orientations": 9,
+    "pixels_per_cell": [
+      8,
+      8
+    ],
+    "cells_per_block": [
+      2,
+      2
+    ]
+  },
+  "lbp": {
+    "method": "uniform",
+    "P": 8,
+    "R": 1
+  },
+  "feature_group_sizes": {
+    "hog": 1764,
+    "lbp": 10,
+    "statistics": 12
+  },
+  "feature_count": 1786,
+  "feature_file": "step3_train_features.npz",
+  "pca_policy": "Fit scaler and PCA inside CV folds in Step 4; this notebook PCA is exploratory only",
+  "class_counts": {
+    "crazing": 240,
+    "inclusion": 240,
+    "patches": 239,
+    "pitted_surface": 240,
+    "rolled-in_scale": 240,
+    "scratches": 240
+  }
+}

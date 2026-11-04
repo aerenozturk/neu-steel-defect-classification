@@ -1,0 +1,48 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+data/raw/
+outputs/
+
+# Python virtual environments
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Dataset and generated training data
+data/raw/
+data/processed/
+*.npy
+*.npz
+
+# Trained model artifacts
+*.joblib
+*.pkl
+*.pickle
+
+# Archives and temporary files
+*.zip
+*.log
+.DS_Store
+
+# Credentials and secrets
+.env
+.env.*
+!.env.example
+kaggle.json
+**/kaggle.json
+credentials.json
+*.pem
+*.key
+
+# Local-path manifests and detailed predictions
+outputs/step1_dataset_manifest.csv
+outputs/step5_final_predictions.csv
+
+# Locally generated reports
+outputs/*.pdf
+

@@ -1,0 +1,7 @@
+Metric,Final held-out test
+Accuracy,0.9111111111111111
+Balanced accuracy,0.9111111111111111
+Macro precision,0.9117956824295055
+Macro recall,0.9111111111111111
+Macro F1,0.9077023959012495
+Weighted F1,0.9077023959012493

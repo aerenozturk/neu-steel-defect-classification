@@ -1,0 +1,23 @@
+{
+  "dataset": "NEU steel surface defect classification",
+  "project_root": "/home/eren/base/NEU_Steel_Defects_CPU",
+  "classes": [
+    "crazing",
+    "inclusion",
+    "patches",
+    "pitted_surface",
+    "rolled-in_scale",
+    "scratches"
+  ],
+  "images": 1800,
+  "train_images": 1440,
+  "held_out_test_images": 360,
+  "input_image_modes": {
+    "RGB": 1800
+  },
+  "rgb_nonidentical_channel_images": 0,
+  "exact_duplicate_groups": 1,
+  "exact_cross_split_duplicate_groups": 0,
+  "train_only_eda": true,
+  "future_policy": "Use 5-fold CV on training only; reserve validation/ as final test; manage duplicate groups within CV."
+}

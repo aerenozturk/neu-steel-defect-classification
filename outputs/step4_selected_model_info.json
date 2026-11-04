@@ -1,0 +1,57 @@
+{
+  "dataset": "NEU-DET",
+  "selected_algorithm": "Random Forest",
+  "selected_configuration": "trees180_leaf3",
+  "selection_metric": "mean 5-fold stratified CV macro-F1 on training images only",
+  "cv_macro_f1_mean": 0.9415517839160629,
+  "cv_macro_f1_std": 0.012239924204657835,
+  "cv_accuracy_mean": 0.9416327913279133,
+  "cv_balanced_accuracy_mean": 0.9416666666666667,
+  "cv_folds": 5,
+  "cv_random_state": 42,
+  "train_samples": 1439,
+  "n_features": 1786,
+  "feature_group_sizes": [
+    1764,
+    10,
+    12
+  ],
+  "feature_extraction": {
+    "image_size": [
+      64,
+      64
+    ],
+    "hog": {
+      "orientations": 9,
+      "pixels_per_cell": [
+        8,
+        8
+      ],
+      "cells_per_block": [
+        2,
+        2
+      ]
+    },
+    "lbp": {
+      "method": "uniform",
+      "P": 8,
+      "R": 1
+    },
+    "statistics": "Step 3 12-statistic definition"
+  },
+  "classes": [
+    "crazing",
+    "inclusion",
+    "patches",
+    "pitted_surface",
+    "rolled-in_scale",
+    "scratches"
+  ],
+  "holdout_test_count": 360,
+  "holdout_evaluated": false,
+  "model_file": "step4_selected_pipeline.joblib",
+  "package_versions": {
+    "numpy": "2.5.4",
+    "scikit_learn": "1.9.1"
+  }
+}
